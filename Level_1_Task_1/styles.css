@@ -1,0 +1,184 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 5rem 0;
+    background-color: #333;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero button {
+    padding: 1rem 2rem;
+    background-color: #00aaff;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.hero button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+button a:hover {
+    background-color: #0077aa;
+}
+
+/* Section styling */
+section {
+    padding: 3rem 1rem;
+    margin: 2rem 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0;
+}
+
+form input,
+form textarea {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 1rem;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0077aa;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem 0;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+
+    .hero button a {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    section {
+        margin: 1rem 0;
+        padding: 2rem 1rem;
+    }
+
+    form input,
+    form textarea {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    form button {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* For smaller devices (phones) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero button a {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    form input,
+    form textarea {
+        font-size: 1rem;
+        padding: 0.9rem;
+    }
+
+    form button {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
