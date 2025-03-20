@@ -1,0 +1,134 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: dodgerblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Main Content Styling */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.portrait {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.bio {
+    max-width: 600px;
+}
+
+.bio h2 {
+    font-size: 2em;
+    color: dodgerblue;
+}
+
+.bio p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portrait {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .bio h2 {
+        font-size: 1.8em;
+    }
+
+    .bio p {
+        font-size: 1.1em;
+    }
+
+    footer {
+        position: relative;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .portrait {
+        width: 120px;
+        height: 120px;
+    }
+
+    .bio h2 {
+        font-size: 1.6em;
+    }
+
+    .bio p {
+        font-size: 1em;
+    }
+
+    footer {
+        font-size: 0.9em;
+        padding: 12px;
+    }
+}
