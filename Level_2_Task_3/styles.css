@@ -17,6 +17,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 600px;
+    margin-top: 2rem;
 }
 
 h1 {
@@ -108,10 +109,19 @@ button:hover {
     background-color: #ffcc00;
 }
 
+.delete-btn {
+    background-color: green;
+}
+
+.delete-btn:hover {
+    background-color: green;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .container {
         padding: 15px;
+        margin-top: 2rem;
     }
 
     h1 {

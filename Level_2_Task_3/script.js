@@ -52,7 +52,7 @@ function addTaskToList(task) {
         <div class="task-actions">
             <button onclick="toggleCompletion(${task.id})">${task.isCompleted ? "Undo" : "Complete"}</button>
             <button class="edit-btn" onclick="editTask(${task.id})">Edit</button>
-            <button onclick="deleteTask(${task.id})">Delete</button>
+            <button class="delete-btn" onclick="deleteTask(${task.id})">Delete</button>
         </div>
     `;
 
