@@ -9,6 +9,59 @@ body {
     line-height: 1.6;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5781de;
+    padding: 20px 50px;
+    position: relative;
+}
+
+.logo{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-button .bar{
+    width: 35px;
+    height: 4px; 
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 3px 0px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li{
+    margin-right: 25px;
+}
+
+.nav-links li a{
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+.nav-links li a:hover{
+    color: #1f376b;
+}
+
 header {
     background: teal;
     color: #fff;
@@ -91,13 +144,35 @@ footer {
 
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
+    .navbar{
+        padding: 20px 25px;
     }
 
-    nav ul li {
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        background-color: #5472b3;
+        padding: 25px;
+        top: 100%;
+        left: 0;
+    }
+
+    .nav-links li {
+        padding: 12px 0px;
+    }
+
+    .nav-links.active{
         display: block;
-        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
     }
 
     .container {
