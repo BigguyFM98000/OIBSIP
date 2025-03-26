@@ -3,30 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Hosting Service</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="navbar">
+        <div class="logo">SecureVPN</div>
+        <div class="toggle-button" id="toggleButton">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="hero-section" id="home">
+            <h1>Your Online Privacy, Secured</h1>
+            <p>Fast, Reliable, and Secure VPN Service to Protect Your Digital Life</p>
+            <a href="#pricing" class="cta-btn">Get Started</a>
+        </div>
     </header>
-    <main>
-        <section class="hero">
-            <h1>Welcome to Our Web Hosting Service</h1>
-            <p>Reliable, fast, and affordable web hosting solutions for everyone.</p>
-            <button><a href="contact.html">Get Started</a></button>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Web Hosting Company. All rights reserved.</p>
-    </footer>
+
+    <section id="features" class="features-section">
+        <h2>Features</h2>
+        <div class="feature">
+          <h3>High-Speed Servers</h3>
+          <p>Enjoy blazing-fast connections, with servers worldwide.</p>
+        </div>
+        <div class="feature">
+          <h3>Unlimited Bandwidth</h3>
+          <p>Stream, browse, and download without any limits.</p>
+        </div>
+        <div class="feature">
+          <h3>Military-Grade Encryption</h3>
+          <p>Your data is encrypted with top-tier security protocols.</p>
+        </div>
+      </section>
+    
+      <section id="pricing" class="pricing-section">
+        <h2>Pricing Plans</h2>
+        <div class="pricing-card">
+          <h3>Basic</h3>
+          <p>$5/month</p>
+          <ul>
+            <li>1 Device</li>
+            <li>Standard Servers</li>
+          </ul>
+          <a href="#contact" class="cta-btn">Sign Up</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Premium</h3>
+          <p>$10/month</p>
+          <ul>
+            <li>5 Devices</li>
+            <li>High-Speed Servers</li>
+            <li>Priority Support</li>
+          </ul>
+          <a href="#contact" class="cta-btn">Sign Up</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Ultimate</h3>
+          <p>$15/month</p>
+          <ul>
+            <li>Unlimited Devices</li>
+            <li>All Premium Features</li>
+            <li>24/7 Support</li>
+          </ul>
+          <a href="#contact" class="cta-btn">Sign Up</a>
+        </div>
+      </section>
+    
+      <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="#" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+    
+          <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+      </section>
+    
+      <footer>
+        <p>&copy; 2025 SecureVPN. All rights reserved.</p>
+      </footer>
+    
+    <script src="scripts.js"></script>
 </body>
 </html>

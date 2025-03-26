@@ -1,184 +1,219 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-/* Basic styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-}
+  }
 
-header {
-    background-color: #333;
-    padding: 1rem 0;
-}
-
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-nav ul li a {
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    background-color: #2c3e50;
     color: white;
-    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5781de;
+    padding: 20px 50px;
+    position: relative;
+}
+
+.logo{
+    font-size: 30px;
+    color: #fff;
     font-weight: bold;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 5rem 0;
-    background-color: #333;
-    color: white;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero button {
-    padding: 1rem 2rem;
-    background-color: #00aaff;
-    color: white;
-    font-size: 1rem;
-    border-radius: 5px;
-}
-
-.hero button a{
-    text-decoration: none;
-    color: #fff;
-}
-
-button a:hover {
-    background-color: #0077aa;
-}
-
-/* Section styling */
-section {
-    padding: 3rem 1rem;
-    margin: 2rem 0;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Contact Form */
-form {
-    display: flex;
+.toggle-button {
+    display: none;
     flex-direction: column;
-}
-
-form label {
-    margin: 0.5rem 0;
-}
-
-form input,
-form textarea {
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 1rem;
-    background-color: #00aaff;
-    color: white;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
-form button:hover {
-    background-color: #0077aa;
+.toggle-button .bar{
+    width: 35px;
+    height: 4px; 
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 3px 0px;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    header {
-        padding: 0.5rem 0;
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li{
+    margin-right: 25px;
+}
+
+.nav-links li a{
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+.nav-links li a:hover{
+    color: #1f376b;
+}
+
+.hero-section {
+    margin-top: 50px;
+  }
+  
+  .hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .cta-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .cta-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .features-section, .pricing-section, .contact-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .features-section h2, .pricing-section h2, .contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .feature, .pricing-card {
+    margin-bottom: 30px;
+  }
+  
+  .feature h3, .pricing-card h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-card {
+    display: inline-block;
+    width: 30%;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .pricing-card ul {
+    list-style: none;
+    margin: 15px 0;
+  }
+  
+  .contact-section form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .contact-section form input, .contact-section form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+@media screen and (max-width: 768px){
+    .navbar{
+        padding: 20px 25px;
     }
 
-    nav ul {
-        padding: 0;
+    .toggle-button {
+        display: flex;
     }
 
-    nav ul li {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        background-color: #5472b3;
+        padding: 25px;
+        top: 100%;
+        left: 0;
+    }
+
+    .nav-links li {
+        padding: 12px 0px;
+    }
+
+    .nav-links.active{
         display: block;
-        margin: 0.5rem 0;
     }
 
-    .hero h1 {
-        font-size: 2rem;
-        padding: 2rem 0;
-    }
-
-    .hero button a {
-        padding: 0.8rem 1.5rem;
-        font-size: 0.9rem;
-    }
-
-    section {
-        margin: 1rem 0;
-        padding: 2rem 1rem;
-    }
-
-    form input,
-    form textarea {
-        font-size: 1rem;
-        padding: 1rem;
-    }
-
-    form button {
-        padding: 1rem;
-        font-size: 1rem;
-    }
-}
-
-/* For smaller devices (phones) */
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 1.5rem;
-    }
-
-    .hero button a {
-        padding: 0.7rem 1.2rem;
-        font-size: 0.85rem;
-    }
-
-    form input,
-    form textarea {
-        font-size: 1rem;
-        padding: 0.9rem;
-    }
-
-    form button {
-        padding: 1rem;
-        font-size: 1rem;
-    }
-
-    footer {
-        padding: 1rem;
-    }
+    .hero-section h1 {
+        font-size: 2.5em;
+      }
+    
+      .hero-section p {
+        font-size: 1.1em;
+      }
+    
+      .pricing-card {
+        width: 80%;
+        margin: 0 auto 20px;
+      }
+    
+      .features-section .feature {
+        margin-bottom: 20px;
+      }
+    
+      .features-section h2 {
+        font-size: 2.2em;
+      }
+    
+      .cta-btn {
+        font-size: 1.2em;
+        padding: 12px 25px;
+      }
+    
+      .contact-section form {
+        width: 90%;
+      }
+    
+      footer {
+        font-size: 0.9em;
+      }
 }
